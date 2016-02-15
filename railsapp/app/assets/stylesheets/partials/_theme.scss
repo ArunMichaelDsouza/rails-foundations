@@ -1,0 +1,46 @@
+// Main theme sass script
+// Contains all elements and components
+
+// Partial imports
+@import "../../../node_modules/pineapple-sass/build/pineapple-sass"; // Pineapple sass
+@import "partials/palette"; // Color palette sass script
+
+%no-margin-padding {
+	margin: 0;
+	padding: 0;
+}
+
+// Header component
+.header-main {
+	background-color: $baseBlack;
+	@include clearfix;
+	padding: 15px 25px;
+}
+
+.header-main-text {
+	color: $baseWhite;
+	margin: 0;
+	font-weight: 400;
+	font-size: 1.55em;
+	display: inline-block;
+}
+
+.header-nav {
+	float: right;
+}
+
+.nav-list {
+	list-style: none;
+	@extend %no-margin-padding;
+	margin-top: 5px;
+}
+
+.nav-list-item {
+	display: inline-block;
+	margin-left: 20px;
+
+	a {
+		color: #fff;
+		font-weight: 300;
+	}
+}
